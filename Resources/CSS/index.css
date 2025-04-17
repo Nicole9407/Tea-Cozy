@@ -1,0 +1,155 @@
+* {
+    background-color: black;
+    font-family: Helvetica, Arial, serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 22px;
+    margin: 10px;
+    max-height: 50px;
+    text-align: left;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    padding: 20px;
+  }
+
+  .nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lightens the background on hover */
+  }  
+  
+  .nav-list li + li::before {
+    color: seashell;
+    margin: 0 10px;
+  }
+  
+  
+  .background {
+    background-image: url('./img-mission-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    margin-top: 69px;
+    position: relative;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: seashell;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    width: 100%;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between items */
+    margin: 20px; /* Adds space around the gallery */
+  }
+  
+  figure {
+    flex: 1 1 300px; /* Allows items to grow and shrink, with a base width of 300px */
+    max-width: 300px; /* Ensures figures don't exceed container width */
+    max-height: 200px;
+    text-align: center; /* Centers text within each figure */
+  }
+  
+  .child {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  figcaption {
+    font-size: 22px;
+    color: seashell;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .locations-gallery {
+    background-image: url('./img-locations-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; /* Fixed height to prevent shrinking */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .locations {
+    margin-bottom: 20px; /* Adds space between the heading and the boxes */
+  }
+  
+  .locations-container {
+    display: flex; /* Use Flexbox to arrange boxes in a row */
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line if needed */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .text-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid seashell;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: seashell;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+
+  footer {
+    max-height: 200px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: black; /* Example background color */
+    color: seashell; /* Example text color */
+  }
+  
+  h6 {
+    text-align: left;
+    margin-left: 20px;
+    /* If using Flexbox, ensure the parent container is set to display: flex; */
+  }
+  
